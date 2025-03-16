@@ -1,0 +1,240 @@
+/* Fuentes y reinicio general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;  /* Fondo claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Fuentes y reinicio general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;  /* Fondo claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Splash Screen */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6A0DAD; /* Violeta elegante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: splashFadeIn 1s ease-out;
+}
+
+#splash-content {
+    text-align: center;
+}
+
+#splash h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #D4AF37; /* Dorado elegante */
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#countdown {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Animaciones Splash */
+@keyframes splashFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Resto del CSS como está */
+/* Encabezado */
+header {
+    background: #6A0DAD;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeInDown 1s;
+}
+
+.header-info h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 1s;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Cita destacada */
+.quote {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.quote blockquote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #555;
+    border-left: 4px solid #D4AF37;
+    padding-left: 10px;
+    margin: 10px 20px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Contenedor principal */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #D4AF37;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+/* Sección Biografía */
+.biografia h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+    padding-bottom: 5px;
+}
+
+.biografia p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    text-align: justify;
+    color: #333;
+}
+
+/* Secciones de Obras y Bibliografía Crítica */
+.obras-destacadas, .bibliografia-critica {
+    animation: fadeIn 1s;
+}
+
+.obras-destacadas ul, .bibliografia-critica ul {
+    list-style: none;
+    padding: 0;
+}
+
+.obras-destacadas ul li, .bibliografia-critica ul li {
+    padding: 8px;
+    background: #f0f0f0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+li:hover {
+    background: #D4AF37;
+    color: white;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background: #6A0DAD;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden; /* Evita cualquier desbordamiento */
+}
+
+/* Estilo del texto del pie de página */
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    position: relative; /* Necesario para efectos en el texto */
+    text-align: center;
+}
+
+/* Iluminación móvil de izquierda a derecha */
+footer p::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: -100%; /* Comienza fuera del lado izquierdo */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(106,13,173,0) 0%, rgba(106,13,173,0.7) 50%, rgba(106,13,173,0) 100%);
+    transform: translateY(-50%);
+    filter: blur(8px); /* Efecto de luz suave */
+    animation: lightSlide 3s linear infinite; /* Movimiento continuo */
+}
+
+/* Keyframes para el movimiento de la luz */
+@keyframes lightSlide {
+    0% {
+        left: -100%; /* Fuera del borde izquierdo */
+    }
+    100% {
+        left: 100%; /* Fuera del borde derecho */
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biografía y obras de Simone Weil, pensadora política y mística, creada por Yuri Bacelo y Ayelén Montezano.">
+  <meta name="author" content="Yuri Bacelo, Ayelén Montezano">
+  <meta name="keywords" content="Simone Weil, biografía, filosofía, obras, mística, política">
+  <title>Simone Weil - Biografía y Obras</title>
+  <!-- Google Fonts: Montserrat para títulos, Roboto para textos -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos para el splash screen */
+    #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      z-index: 9999;
+    }
+    #splash-content {
+      text-align: center;
+    }
+    #countdown {
+      font-size: 3rem;
+      margin-top: 20px;
+    }
+    /* Animación de desvanecimiento */
+    .fade-out {
+      animation: fadeOut 1s forwards;
+    }
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Splash Screen con animación -->
+  <div id="splash" aria-label="Pantalla de inicio animada">
+    <div id="splash-content">
+      <h1>CREADO POR YURI BACELO Y AYELÉN MONTEZANO</h1>
+      <div id="countdown">3</div> <!-- Contador -->
+    </div>
+  </div>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="header-info">
+      <h1>Simone Weil</h1>
+      <p>París, 1909 – Ashford, 1943</p>
+    </div>
+  </header>
+
+  <!-- Sección Hero: Foto de Simone Weil -->
+  <section class="hero">
+    <img src="images/simone_weil_photo.jpg" alt="Retrato de Simone Weil, pensadora política y mística">
+  </section>
+
+  <!-- Cita destacada -->
+  <section class="quote">
+    <blockquote>
+      <p>«Lo que sabemos de antemano es que la vida será menos inhumana en la medida en que la capacidad individual de pensar y de actuar sea mayor.»</p>
+    </blockquote>
+  </section>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección de Biografía -->
+    <section class="biografia">
+      <h2>Biografía</h2>
+      <p>
+        Simone Weil (París, 3 de febrero de 1909 - Ashford, 24 de agosto de 1943) fue una filósofa, escritora y activista política francesa, reconocida por su profundo compromiso con la justicia social y su pensamiento místico.
+      </p>
+      <h3>Infancia y educación</h3>
+      <p>
+        Nacida en una familia judía laica e intelectual, su padre, Bernard Weil, fue un médico de renombre, y su hermano mayor, André Weil, se destacó como matemático. Desde temprana edad, Simone mostró una notable sensibilidad hacia el sufrimiento ajeno y una inclinación por la filosofía. Estudió en la Escuela Normal Superior de París, donde fue alumna de Émile Chartier (conocido como Alain), y se graduó en 1931.
+      </p>
+      <h3>Compromiso social y político</h3>
+      <p>
+        Tras su graduación, Weil enseñó en diversos liceos, pero su fuerte compromiso con las causas sociales la llevó a participar activamente en movimientos obreros y sindicales. En 1934, decidió experimentar en carne propia las condiciones laborales de la clase obrera y trabajó como operaria en la fábrica de Renault. Esta experiencia profundizó su comprensión sobre la opresión y la alienación en el trabajo industrial.
+      </p>
+      <h3>Participación en la Guerra Civil Española</h3>
+      <p>
+        A pesar de su pacifismo, en 1936 se unió a la columna Durruti durante la Guerra Civil Española, motivada por su deseo de luchar contra el fascismo. Sin embargo, su participación fue breve debido a un accidente que la obligó a regresar a Francia.
+      </p>
+      <h3>Experiencia mística y pensamiento religioso</h3>
+      <p>
+        Aunque provenía de una familia judía agnóstica, Weil experimentó profundas vivencias místicas que la acercaron al cristianismo, aunque nunca llegó a bautizarse ni a integrarse formalmente en ninguna iglesia. Su espiritualidad se caracterizó por una búsqueda de la verdad y la compasión hacia los oprimidos.
+      </p>
+      <h3>Exilio y fallecimiento</h3>
+      <p>
+        Con la ocupación nazi de Francia, Weil y su familia, de origen judío, se vieron obligados a exiliarse. Se trasladaron a Estados Unidos y posteriormente a Inglaterra, donde colaboró con la Francia Libre de Charles de Gaulle. Su salud, ya delicada, se deterioró debido a la tuberculosis y a su decisión de limitar su alimentación en solidaridad con los franceses que sufrían bajo la ocupación. Falleció el 24 de agosto de 1943 en Ashford, Inglaterra.
+      </p>
+      <h3>Legado literario y filosófico</h3>
+      <p>
+        Weil dejó una obra vasta que abarca desde escritos filosóficos y políticos hasta reflexiones místicas. Entre sus obras destacan "La gravedad y la gracia", "La condición obrera" y "Echar raíces". Su pensamiento, que combina una profunda reflexión sobre la condición humana con una inquebrantable ética de la solidaridad, sigue siendo objeto de estudio y admiración.
+      </p>
+      <p>
+        La vida y obra de Simone Weil continúan inspirando a quienes buscan comprender la relación entre espiritualidad, justicia social y filosofía.
+      </p>
+    </section>
+
+    <!-- Sección de Obras Destacadas -->
+    <section class="obras-destacadas">
+      <h2>Obras destacadas</h2>
+      <ul>
+        <li><strong>1949, L’Enracinement</strong>, París: Gallimard (trad. cast. Echar raíces, Madrid: Trotta, 1996).</li>
+        <li><strong>1950, Attente de Dieu</strong>, París: La Colombe (trad. cast. A la espera de Dios, Madrid: Trotta, 1993).</li>
+        <li><strong>1951, La condition ouvrière</strong>, París: Gallimard (trad. cast. La condición obrera, Madrid: Trotta, 2014).</li>
+        <li><strong>1953, La source grecque</strong>, París: Gallimard (trad. cast. La fuente griega, Madrid: Trotta, 2005).</li>
+        <li><strong>1980, Réflexions sur les causes de la liberté et de l’oppression sociale</strong>, París: Gallimard (trad. cast. Reflexiones sobre las causas de la libertad y la opresión social, Madrid: Trotta, 2015).</li>
+      </ul>
+    </section>
+
+    <!-- Sección de Bibliografía Crítica -->
+    <section class="bibliografia-critica">
+      <h2>Bibliografía crítica</h2>
+      <ul>
+        <li>BEA, Emilia (ed.), 2010, <em>Simone Weil. La conciencia del dolor y de la belleza</em>, Madrid: Trotta.</li>
+        <li>BIRULÉS, Fina y RIUS GATELL, Rosa (eds.), 2013, <em>Lectoras de Simone Weil</em>, Barcelona: Icaria.</li>
+        <li>CANCIANI, Domenico, 1996, <em>Simone Weil. Il coraggio di pensare</em>, Roma: Lavoro.</li>
+        <li>CHENAVIER, Robert, 2001, <em>Simone Weil. Una philosophie du travail</em>, París: du Cerf.</li>
+        <li>DIOTIMA, 1990, <em>Simone Weil. La provocazione della verità</em>, Nápoles: Liguori.</li>
+        <li>FIORI, Gabriella, 1981, <em>Biografia di un pensiero</em>, Milán: Garzanti.</li>
+        <li>PÉTREMENT, Simone, 1973, <em>La vie de Simone Weil</em>, París: Fayard (trad. cast. Madrid: Trotta, 1997).</li>
+        <li>REVILLA, Carmen (ed.), 1995, <em>Simone Weil. Descifrar el silencio del mundo</em>, Madrid: Trotta.</li>
+        <li>REVILLA, Carmen, 2003, <em>Simone Weil. Nombrar la experiencia</em>, Madrid: Trotta.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p><strong>TRABAJO HECHO POR</strong> Yuri Bacelo y Ayelén Montezano</p>
+  </footer>
+
+  <!-- Script para el contador y la eliminación del splash -->
+  <script>
+    window.addEventListener('load', function() {
+      let countdownValue = 3; // Valor inicial del contador
+      const countdownElement = document.getElementById('countdown');
+
+      const countdownInterval = setInterval(function() {
+        countdownValue--;
+        countdownElement.textContent = countdownValue;
+        if (countdownValue <= 0) {
+          clearInterval(countdownInterval);
+          const splash = document.getElementById('splash');
+          splash.classList.add('fade-out');
+          setTimeout(function() {
+            splash.parentNode.removeChild(splash);
+          }, 1000);
+        }
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
