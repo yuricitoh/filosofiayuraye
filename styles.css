@@ -30,22 +30,6 @@ body::before {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
-/* Watermark animado en el fondo */
-body::after {
-    content: "HECHO POR YURI BACELO Y AYELÉN MONTEZANO";
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    opacity: 0.2;  /* Letras poco visibles */
-    pointer-events: none;
-    z-index: -1;
-    animation: textColorAnimation 10s infinite;
-}
-
 @keyframes textColorAnimation {
     0% { color: #FF0080; }
     25% { color: #FF8C00; }
@@ -267,4 +251,24 @@ footer p::before {
 @keyframes lightSlide {
     0% { left: -100%; }
     100% { left: 100%; }
+}
+
+/* Ajustes para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Aumentar la visibilidad del fondo animado */
+    body::before {
+        opacity: 0.25;
+        background-size: 300% 300%;
+        animation-duration: 12s;
+    }
+    /* Mejorar la visibilidad del watermark */
+    body::after {
+        font-size: 1.4rem;
+        opacity: 0.3;
+    }
+    /* Aumentar ligeramente la opacidad de la animación en secciones */
+    main section::before {
+        opacity: 0.15;
+        animation-duration: 8s;
+    }
 }
